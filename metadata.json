@@ -1,0 +1,11 @@
+{
+  "name": "Artisan - AI Artisan Smart Catalog",
+  "description": "AI-Driven Market Linkage and Smart Cataloging Platform for Traditional Artisans.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --terracotta-50: #fff7ed;
+    --terracotta-500: #ea580c;
+    --terracotta-700: #c2410c;
+    --indigo-900: #1e1b4b;
+    --turmeric-500: #eab308;
+    --surface-bg: #fbfaf8;
+    --card-bg: #ffffff;
+    --text-main: #1c1917;
+  }
+
+  body {
+    background-color: var(--surface-bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, Cambria, serif;
+  }
+
+  /* High Contrast Accessibility Mode */
+  body.high-contrast {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  body.high-contrast .bg-white,
+  body.high-contrast .bg-stone-50,
+  body.high-contrast .bg-amber-50 {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  body.high-contrast .text-stone-600,
+  body.high-contrast .text-stone-500,
+  body.high-contrast .text-stone-700 {
+    color: #e2e8f0 !important;
+  }
+  body.high-contrast button {
+    border: 2px solid #facc15 !important;
+  }
+
+  /* Large Font Mode for Low-Literacy / Elderly Artisans */
+  body.large-text {
+    font-size: 1.15rem;
+  }
+  body.large-text button {
+    font-size: 1.1rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+}
+
+/* Artisan UI subtle background texture */
+.artisan-grid-pattern {
+  background-color: #1c1917;
+  background-image: radial-gradient(rgba(245, 158, 11, 0.15) 1px, transparent 1px), radial-gradient(rgba(234, 88, 12, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Voice assistant audio pulse */
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 16px rgba(234, 88, 12, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0);
+  }
+}
+
+.voice-recording-pulse {
+  animation: pulseRing 1.4s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Custom scrollbar for mobile category pills */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
