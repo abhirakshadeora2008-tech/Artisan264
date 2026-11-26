@@ -1247,7 +1247,7 @@ function openProductDetailModal(product) {
 
   const modalArtisanImg = document.getElementById("detail-modal-artisan-img");
   if (modalArtisanImg) {
-    modalArtisanImg.src = artisan.profileImage || "/assets/sitadevi_profile.jpg";
+    modalArtisanImg.src = artisan.profileImage || "./assets/sitadevi_profile.jpg";
   }
 
   // WhatsApp click to chat

@@ -17,7 +17,7 @@ export const INITIAL_ARTISANS = [
     yearsExperience: 28,
     upiId: "sitadevi@upi",
     bio: "National Awardee artisan practicing Madhubani painting passed down through 4 generations of Mithila women. Specializes in Kohbar and sacred nature motifs.",
-    profileImage: "/assets/sitadevi_profile.jpg",
+    profileImage: "./assets/sitadevi_profile.jpg",
     isVerified: true,
     hasGiTag: true,
     preferredLanguage: "hi"

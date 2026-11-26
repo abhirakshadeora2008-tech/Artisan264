@@ -753,7 +753,7 @@ export class MaterialPricingWizardController {
       calculated_price: breakdown.finalAdjustedPrice,
       price_override_percent: breakdown.overridePercent,
       status: "listed",
-      image_url: "/assets/artisan_logo.jpg",
+      image_url: "./assets/artisan_logo.jpg",
     };
 
     // Submit via OfflineSyncManager (IndexedDB cache if offline, or Fetch if online)
